@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(to right, #00b09b, #96c93d);
+    line-height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers {
+    position: relative;
+    left: 5px;
+}
+
+.tilt {
+    display: inline-block;
+    height: 30px;
+    width: 17px;
+    background: white;
+    transform: rotate(45deg);
+    position: relative;
+    top: -38px;
+    right: -8px;
+}
+
+.straight {
+    display: inline-block;
+    height: 70px;
+    width: 17px;
+    background: white;
+    z-index: 100;
+    box-shadow: 0px 0px 15px grey;
+    position: relative;
+}
+
+.zero0 {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 16px solid white;
+    box-sizing: border-box;
+    position: relative;
+    left: -9px;
+    z-index: 4;
+    box-shadow: 0px 0px 15px grey;
+}
+
+.zero1 {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 16px solid white;
+    box-sizing: border-box;
+    position: relative;
+    left: -20px;
+    z-index: 2;
+    box-shadow: 0px 0px 15px grey;
+}
+
+.days {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 18px;
+}
