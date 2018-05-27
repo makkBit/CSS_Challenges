@@ -16,7 +16,6 @@ body{
     align-items: center;
 }
 
-
 .menu-icon{
     position: absolute;
     width: 70px;
@@ -44,9 +43,19 @@ body{
 }
 
 
+/* to prevent css animation of page load */
+.menu-icon.no-animate{
+    animation: none !important;
+}
+.menu-icon.no-animate:before{
+    animation: none !important;
+}
+.menu-icon.no-animate:after{
+    animation: none !important;
+}
 
 
-
+/* forwards */
 body.active .menu-icon{
     animation: animateLine2 1s forwards;
 }
@@ -60,6 +69,7 @@ body.active .menu-icon:after{
 }
 
 
+/* backwards */
 body .menu-icon {
     animation: animateLine2Rev 1s;
 }
@@ -73,8 +83,7 @@ body .menu-icon:after {
 }
 
 
-
-
+/* animations*/
 @keyframes animateLine1{
     0%{
         transform: translate(0,0) rotate(0deg);
@@ -97,8 +106,6 @@ body .menu-icon:after {
         transform: translate(0,0) rotate(0deg);
     }
 }
-
-
 
 @keyframes animateLine2{
     0%{
@@ -131,10 +138,6 @@ body .menu-icon:after {
     }
 }
 
-
-
-
-
 @keyframes animateLine3{
     0%{
         transform: translate(0,0) rotate(0deg);
@@ -157,13 +160,3 @@ body .menu-icon:after {
         transform: translate(0,0) rotate(0deg);
     }
 }
-
-
-
-.no-animation{
-    animation: none !important;
-}
-
-
-
-
